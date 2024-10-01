@@ -1,0 +1,26 @@
+
+{%load static%}
+{% block content %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="Tittle" placeholder="Tittle:"><br>
+    <input type="number" name="Year" placeholder="Year:"><br>
+    <input type="number" name="Rated" placeholder="Rated:"><br>
+    <input type=" " name="Released" placeholder="Released:"><br>
+    <input type="" name="Runtime" placeholder="Runtime:"><br>
+    <input type="text" name="Genre" placeholder="Genre:"><br>
+    <input type="text" name="Director" placeholder="Director:"><br>
+    <input type="text" name="Writer" placeholder="Writer:"><br>
+    <input type="text" name="Language" placeholder="Language:"><br>
+    <input type="text" name="Country" placeholder="Country:"><br>
+    <input type="text" name="Awards" placeholder="Awards:"><br>
+    <input type="file" name="Poster" placeholder="Poster"><br>
+    <input type="url" name="Poster_url" placeholder="Poster_url"><br>
+    <input type="text" name="imdbID" placeholder="ImdbID"><br>
+    <input type="text" name="Type" placeholder="Type:"><br>
+    <input type="number" name="Ratings" placeholder="Ratings:"><br>
+    <input type="number" name="Metascore" placeholder="Metascore:"><br>
+    <input type="number" name="imdbRating" placeholder="imdbRating:"><br>
+    <input type="submit">
+</form>
+{% endblock %}
